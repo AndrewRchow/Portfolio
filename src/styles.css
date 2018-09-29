@@ -1,0 +1,9 @@
+body {
+background: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)),url("/assets/images/wallpaper.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,47 @@
+
+* {
+    letter-spacing: 3px;
+}
+#laptopLogo{
+    margin: 0 auto;
+    width: 14rem;
+    height: 14rem;
+    line-height: 18rem;
+    border: solid 2px #ffffff;
+    border-radius: 100%;   
+}
+
+#header{
+    border-top:solid 2px #ffffff;
+    border-bottom:solid 2px #ffffff;
+    padding:3%;
+    width:50%;
+    margin: 0 auto;
+    /* background-color:rgba(211,211,211, 0.2); */
+}
+
+.vl {
+    width:2px;
+    background:white;
+    height: 100px;
+margin: 0 auto;
+
+}
+
+ul{
+    padding:0px;
+}
+li {
+    /* background-color:rgba(27, 31, 34, 0.6); */
+    display:inline-block;
+    margin:0 auto;
+    padding:1em 2em;
+    width:10em;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+}
+
+li:hover {
+        background-color:rgba(27, 31, 34, 0.6);
+
+}
