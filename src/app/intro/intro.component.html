@@ -1,6 +1,21 @@
 <div class="panel">
     <div class="content">
+
+                    <div [routerLink]="['/home']" id="closeButton"> &times;</div>  
+
             <h1 id="title">INTRO</h1>
             <img src="../assets/images/intro.jpg">
+            <p id="textBody">Welcome to my website! I'm Andrew and it seems you've stumbled onto my webpage.
+                I do a lot of Full Stack work and have been in-between projects recently.
+                You'll usually find me working on different ASP.NET apps, although currently I'm also trying to pick up React and NodeJS.
+                In my free time I like playing boardgames and sports with friends.
+
+                <br />
+                <br />
+                
+                Shoot me a <a [routerLink]="['/contact']">message</a> if you want to talk about games or work. You can also take a look at my <a [routerLink]="['/skills']">resume</a> and samples of my <a [routerLink]="['/projects']">projects</a>.
+
+
+            </p>
     </div>
 </div>

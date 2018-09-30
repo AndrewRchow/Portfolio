@@ -1,6 +1,6 @@
 .panel {
     background-color:rgba(27, 31, 34, 0.7);
-    margin: 0 auto;
+    margin: 0 auto 4% auto;
     border-radius: 4px;
     width:84rem;
     max-width: 100%;
@@ -9,15 +9,6 @@
 .content{
     padding: 8rem 5rem 5rem 5rem;
 }
-
-@media screen and (max-width: 480px){
-    .content {
-        padding: 2.5rem 2rem 2rem 2rem;
-    }
-}
-
-
-
 
 img {
    max-width: 100%;
@@ -28,5 +19,62 @@ img {
     text-align: left;
     font-weight:600;
     letter-spacing: 7px;
-    font-size:2.5rem;
+    font-size:4rem;
+    margin-bottom:5rem;
+}
+
+#textBody{
+    margin-top:3rem;
+    margin-bottom:3rem;
+    text-align: left;
+    font-size:2rem;
+    line-height:3.5rem;
+}
+
+#closeButton {
+    font-size:5rem;
+    line-height:5rem;
+    margin-top:-6rem;
+    margin-right:-2rem;
+    border-radius:50%;
+
+    cursor: pointer;
+    float:right;
+
+    width:5rem;
+    height:5rem;
+    margin-bottom:0;
+}
+
+#closeButton:hover {
+
+    background-color:rgba(211,211,211, 0.2);
+}
+
+a{
+    cursor: pointer;
+    color:#1496BB;
+}
+a:hover{
+    color:white;
+}
+
+@media screen and (max-width: 480px){
+    .content {
+        padding: 2.5rem 2rem 2rem 2rem;
+    }
+    
+    #closeButton {
+        margin-top:-2rem;
+        margin-right:-1rem;
+        font-size:3rem;
+        width:3rem;
+        height:3rem;
+        line-height:3rem;
+    }
+
+    #title {
+        font-size:2rem;
+        margin-bottom:2rem;
+    }
 }

@@ -1,3 +1,19 @@
-<p>
-  contact works!
-</p>
+<div class="panel">
+    <div class="content">
+  
+      <div [routerLink]="['/home']" id="closeButton"> &times;</div>
+  
+      <h1 id="title">CONTACT</h1>
+      <input type="email" placeholder="Your email">
+      <br />
+      <textarea placeholder="Your message"></textarea>
+      <br />
+      <button id="submitButton" [routerLink]="['/home']">SUBMIT</button>
+      <br />
+
+      <div id="socialLinks">
+          <a href="https://www.linkedin.com/in/andrewchow002/" target="_blank" class="fa fa-linkedin fa-3x"></a>
+          <a href="https://github.com/AndrewRchow" target="_blank" class="fa fa-github fa-3x"></a>    
+      </div>
+    </div>
+  </div>
