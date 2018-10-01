@@ -9,15 +9,15 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 
 const appRoutes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
-    {path: 'home', component: DashboardComponent},
-    {path: 'intro', component: IntroComponent},
-    {path: 'skills', component: SkillsComponent},
-    {path: 'projects', component: ProjectsComponent},
-    {path: 'contact', component: ContactComponent},
+    {path: 'home', component: DashboardComponent, data: {depth:1}},
+    {path: 'intro', component: IntroComponent, data: {depth:2}},
+    {path: 'skills', component: SkillsComponent, data: {depth:2}},
+    {path: 'projects', component: ProjectsComponent, data: {depth:2}},
+    {path: 'contact', component: ContactComponent, data: {depth:2}},
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(appRoutes)],
+    imports: [RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'})],
     exports: [RouterModule]
 })
 export class AppRoutingModule {

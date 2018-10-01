@@ -2,6 +2,7 @@
 * {
     letter-spacing: 3px;
 }
+
 #laptopLogo{
     margin: 0 auto;
     width: 14rem;
@@ -17,22 +18,37 @@
     padding:3%;
     width:50%;
     margin: 0 auto;
-    /* background-color:rgba(211,211,211, 0.2); */
+
+    /* animation: expand 2s ease-in-out; */
+}
+
+@keyframes expand {
+    0% {
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+h1{
+    letter-spacing: 8px;
 }
 
 .vl {
     width:2px;
     background:white;
     height: 100px;
-margin: 0 auto;
-
+    margin: 0 auto;
 }
 
 ul{
     padding:0px;
 }
+
 li {
-    /* background-color:rgba(27, 31, 34, 0.6); */
     display:inline-block;
     margin:0 auto;
     padding:1em 2em;
@@ -42,6 +58,21 @@ li {
 }
 
 li:hover {
-        background-color:rgba(27, 31, 34, 0.6);
+    background-color:rgba(27, 31, 34, 0.6);
 
 }
+@media screen and (max-width: 1000px){
+    #header{
+        width:80%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        font-size:2rem;
+    }
+    h3{
+        font-size:1rem;
+    }
+}
+

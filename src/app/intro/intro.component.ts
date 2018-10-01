@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
-  constructor() { }
+  
+  // @HostListener('document:click', ['$event'])
+  // clickout(event) {
+  //   if(!this.eRef.nativeElement.contains(event.target)) {
+  //   this.router.navigateByUrl('/home');  
+  //   } 
+  // }
+
+
+  constructor(private eRef: ElementRef, private router: Router) { }
 
   ngOnInit() {
   }

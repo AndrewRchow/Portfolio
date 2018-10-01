@@ -48,7 +48,7 @@ input, textarea {
 }
 
 #submitButton:hover {
-    background-color:rgba(204, 202, 202, 0.719);
+    background-color:rgba(211,211,211, 0.2);
 }
 
 #socialLinks {
@@ -90,8 +90,18 @@ input, textarea {
         padding: 2.5rem 2rem 2rem 2rem;
     }
 
+    #closeButton {
+        margin-top:-2rem;
+        margin-right:-1rem;
+        font-size:3rem;
+        width:3rem;
+        height:3rem;
+        line-height:3rem;
+    }
+
     #title {
         font-size:2rem;
         margin-bottom:2rem;
     }
 }
+
