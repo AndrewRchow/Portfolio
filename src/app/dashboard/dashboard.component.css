@@ -65,6 +65,10 @@ li:hover {
     #header{
         width:80%;
     }
+
+    .vl {
+        height: 80px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -73,6 +77,10 @@ li:hover {
     }
     h3{
         font-size:1rem;
+    }
+
+    .vl {
+        height: 60px;
     }
 }
 

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-skills',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  @HostListener('document:click', ['$event'])
+  clickout(event) {
+    if((!this.eRef.nativeElement.contains(event.target) && event.target.tagName!='LI')
+          ||event.target.tagName=='APP-SKILLS') {
+      console.log(event.target.tagName);
+    this.router.navigateByUrl('/home');  
+    } 
+  }
+
+  constructor(private eRef: ElementRef, private router: Router) { }
 
   ngOnInit() {
   }
