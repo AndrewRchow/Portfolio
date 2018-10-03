@@ -1,5 +1,5 @@
 .panel {
-    background-color:rgba(27, 31, 34, 0.7);
+    background-color:rgba(27, 31, 34, 0.8);
     margin: 0 auto 4% auto;
     border-radius: 4px;
     width:84rem;
@@ -46,7 +46,6 @@ img {
     line-height:2.8rem;
     border-radius:3px;
     height:7rem;
-
 }
 
 #closeButton {
@@ -55,6 +54,7 @@ img {
     margin-top:-6rem;
     margin-right:-2rem;
     border-radius:50%;
+    padding-left:1rem;
 
     cursor: pointer;
     float:right;
@@ -69,23 +69,21 @@ img {
 }
 
 #resumeButton {
+    display:block;
     margin-left:0;
     border-radius:6px;
     padding:1rem;
     margin-bottom:20px;
     width:10rem;
     background-color:rgba(182, 182, 182, 0.575);
+    color:white;
     cursor: pointer;
+    text-align: center;
 }
 
-#resumeButton a {
-    color:white;
-}
 
 #resumeButton:hover {
     background-color:white;
-}
-#resumeButton:hover a {
     color:black;
 }
 
@@ -101,6 +99,7 @@ img {
         width:3rem;
         height:3rem;
         line-height:3rem;
+        padding-left:0.6rem;
     }
 
     #title {
@@ -111,5 +110,13 @@ img {
         font-size:2rem;
         letter-spacing: 4px;
         margin-bottom:1.5rem;
+    }
+    .skillsHeader {
+        font-size:1.5rem;
+    }
+    .skillsText {
+        line-height:2rem;
+        border-radius:3px;
+        font-size:1.3rem;
     }
 }

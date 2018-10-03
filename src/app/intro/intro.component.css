@@ -1,5 +1,5 @@
 .panel {
-    background-color:rgba(27, 31, 34, 0.7);
+    background-color:rgba(27, 31, 34, 0.8);
     margin: 0 auto 4% auto;
     border-radius: 4px;
     width:84rem;
@@ -37,6 +37,7 @@ img {
     margin-top:-6rem;
     margin-right:-2rem;
     border-radius:50%;
+    padding-left:1rem;
 
     cursor: pointer;
     float:right;
@@ -71,10 +72,19 @@ a:hover{
         width:3rem;
         height:3rem;
         line-height:3rem;
+        padding-left:0.6rem;
     }
 
     #title {
         font-size:2rem;
         margin-bottom:2rem;
+    }
+
+    #textBody{
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
+
+        font-size:1.4rem;
+        line-height:2.2rem;
     }
 }

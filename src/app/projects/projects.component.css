@@ -1,5 +1,5 @@
 .panel {
-    background-color:rgba(27, 31, 34, 0.7);
+    background-color:rgba(27, 31, 34, 0.8);
     margin: 0 auto 4% auto;
     border-radius: 4px;
     width:84rem;
@@ -28,7 +28,7 @@ img {
     text-align: left;
     font-weight:600;
     letter-spacing: 10px;
-    margin-bottom:2.5rem;
+    margin-bottom:1.5rem;
 }
 
 .sectionBody {
@@ -57,6 +57,7 @@ img {
     margin-top:-6rem;
     margin-right:-2rem;
     border-radius:50%;
+    padding-left:1rem;
 
     cursor: pointer;
     float:right;
@@ -82,6 +83,7 @@ img {
         width:3rem;
         height:3rem;
         line-height:3rem;
+        padding-left:0.6rem;
     }
 
     #title {
@@ -91,6 +93,13 @@ img {
     .sectionHeader {
         font-size:2rem;
         letter-spacing: 4px;
-        margin-bottom:1.5rem;
+        margin-bottom:0.5rem;
+    }
+    .sectionBody {
+        font-size:1.5rem;
+    }
+    .projectsText {
+        line-height:2rem;
+
     }
 }

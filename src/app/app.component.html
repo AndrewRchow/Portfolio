@@ -1,4 +1,5 @@
-<!-- [@routeAnimation]="getDepth(myOutlet)" -->
-<div class="container main" >
+
+<div class="bg"></div>
+<div class="container main" [@fadeAnimation]="getDepth(myOutlet)">
   <router-outlet #myOutlet="outlet"></router-outlet>
 </div>

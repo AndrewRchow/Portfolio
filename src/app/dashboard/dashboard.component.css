@@ -1,6 +1,7 @@
 
 * {
     letter-spacing: 3px;
+    text-align: center;
 }
 
 #laptopLogo{
@@ -19,17 +20,15 @@
     width:50%;
     margin: 0 auto;
 
-    /* animation: expand 2s ease-in-out; */
+    /* animation: expand 1s ease-in-out; */
 }
 
 @keyframes expand {
     0% {
-        transform: scaleY(0);
-        -webkit-transform: scaleY(0);
+       max-height:0;
     }
     100% {
-        transform: scaleY(1.0);
-        -webkit-transform: scaleY(1.0);
+       max-height:1000px;
     }
 }
 
