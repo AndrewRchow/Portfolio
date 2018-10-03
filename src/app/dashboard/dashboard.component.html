@@ -1,17 +1,22 @@
-  <div id="laptopLogo">
-    <i class="fa fa-laptop fa-5x"></i>
+  <div class="dashBoard">
+      <div id="laptopLogo">
+        <i class="fa fa-laptop fa-5x"></i>
+      </div>
+      <div class="vl"></div>
+      <div class="hl"></div>
+      <div id="header">
+        <h1 style="font-weight: 600;">ANDREW CHOW</h1>
+        <h3>ENGINEER / WEB DEVELOPER</h3>
+      </div>
+      <div class="hl"></div>
+      <div class="vl"></div>
+    <div>
+      <ul>
+        <li [routerLink]="['/intro']">INTRO</li>
+        <li [routerLink]="['/skills']">ABOUT</li>
+        <li [routerLink]="['/projects']">PROJECTS</li>
+        <li [routerLink]="['/contact']">CONTACT</li>
+      </ul>
+    </div>
   </div>
-  <div class="vl"></div>
-  <div id="header">
-    <h1 style="font-weight: 600;">ANDREW CHOW</h1>
-    <h3>ENGINEER / WEB DEVELOPER</h3>
-  </div>
-  <div class="vl"></div>
-<div>
-  <ul>
-    <li [routerLink]="['/intro']">INTRO</li>
-    <li [routerLink]="['/skills']">ABOUT</li>
-    <li [routerLink]="['/projects']">PROJECTS</li>
-    <li [routerLink]="['/contact']">CONTACT</li>
-  </ul>
-</div>
+  
