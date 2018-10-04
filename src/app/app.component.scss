@@ -1,12 +1,3 @@
-
-// .main {
-//     color:white;
-//     margin-top:5%;
-//     text-align: center;
-
-//     position: relative;
-// }
-
   :host {
 
     display: flex;
@@ -18,8 +9,8 @@
     //   position: relative;
 
       color:white;
-          margin-top:5%;
-        //   text-align: center;
+      margin-top:5%;
+    //   text-align: center;
     }
   
     /deep/ router-outlet ~ * {

@@ -9,6 +9,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LoadOnceService } from './loadOnce.service';
 
 
 @NgModule({
@@ -18,14 +19,15 @@ import { AppRoutingModule } from './app-routing.module';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    DashboardComponent
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [LoadOnceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

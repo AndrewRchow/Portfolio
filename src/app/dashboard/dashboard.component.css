@@ -4,35 +4,6 @@
     text-align: center;
 }
 
-.dashBoard {
-    -webkit-transform: translateY(16%);
-        -ms-transform: translateY(16%);
-            transform: translateY(16%);
-    -webkit-animation: slideUp 1s ease 0.5s 1 normal forwards;
-            animation: slideUp 1s ease 0.5s 1 normal forwards;
-}
-
-@-webkit-keyframes slideUp {
-    0%{
-        -webkit-transform: translateY(16%);
-                transform: translateY(16%);
-    }
-    100%{
-        -webkit-transform: translateY(0%);
-                transform: translateY(0%);
-    }
-}
-@keyframes slideUp {
-    0%{
-        -webkit-transform: translateY(16%);
-                transform: translateY(16%);
-    }
-    100%{
-        -webkit-transform: translateY(0%);
-                transform: translateY(0%);
-    }
-}
-
 #laptopLogo{
     margin: 0 auto;
     width: 14rem;
@@ -45,65 +16,14 @@
 #header{
     width:50%;
     margin: 0 auto;
-    -webkit-animation: expandHeader 1s ease 0.5s 1 normal forwards;
-            animation: expandHeader 1s ease 0.5s 1 normal forwards;
-    max-height:0px;
-    padding:0;
-    opacity:0;
+    max-height:1000px;
+    padding:3%;
 }
-@-webkit-keyframes expandHeader {
-    0% {
-        opacity:0;
-        padding:0;
-    }
-    10% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-        max-height:1000px;
-        padding:3%;
-    }
-}
-@keyframes expandHeader {
-    0% {
-        opacity:0;
-        padding:0;
-    }
-    10% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-        max-height:1000px;
-        padding:3%;
-    }
-}
+
 #header h1, #header h3{
-    margin: 0 auto;
-    -webkit-animation: expandTextMargin 0.5s ease .5s 1 normal forwards;
-            animation: expandTextMargin 0.5s ease .5s 1 normal forwards;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-
-@-webkit-keyframes expandTextMargin {
-    0% {
-        margin: 0 auto;
-    }
-    100% {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-}
-@keyframes expandTextMargin {
-    0% {
-        margin: 0 auto;
-    }
-    100% {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-}
-
 
 h1{
     letter-spacing: 8px;
@@ -141,6 +61,7 @@ li:hover {
     background-color:rgba(27, 31, 34, 0.6);
 
 }
+
 @media screen and (max-width: 1000px){
     #header{
         width:80%;
@@ -171,3 +92,93 @@ li:hover {
     }
 }
 
+
+.firstView{
+    -webkit-transform: translateY(16%);
+        -ms-transform: translateY(16%);
+            transform: translateY(16%);
+    -webkit-animation: slideUp 1s ease 0.5s 1 normal forwards;
+            animation: slideUp 1s ease 0.5s 1 normal forwards;
+}
+
+@-webkit-keyframes slideUp {
+    0%{
+        -webkit-transform: translateY(16%);
+                transform: translateY(16%);
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+}
+@keyframes slideUp {
+    0%{
+        -webkit-transform: translateY(16%);
+                transform: translateY(16%);
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+}
+
+.firstView #header {
+    -webkit-animation: expandHeader 1s ease 0.5s 1 normal forwards;
+            animation: expandHeader 1s ease 0.5s 1 normal forwards;
+    max-height:0px;
+    padding:0;
+    opacity:0;
+}
+@-webkit-keyframes expandHeader {
+    0% {
+        opacity:0;
+        padding:0;
+    }
+    10% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+        max-height:1000px;
+        padding:3%;
+    }
+}
+@keyframes expandHeader {
+    0% {
+        opacity:0;
+        padding:0;
+    }
+    10% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+        max-height:1000px;
+        padding:3%;
+    }
+}
+
+.firstView #header h1,.firstView #header h3{
+    margin: 0 auto;
+    -webkit-animation: expandTextMargin 0.5s ease .5s 1 normal forwards;
+            animation: expandTextMargin 0.5s ease .5s 1 normal forwards;
+}
+
+@-webkit-keyframes expandTextMargin {
+    0% {
+        margin: 0 auto;
+    }
+    100% {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+@keyframes expandTextMargin {
+    0% {
+        margin: 0 auto;
+    }
+    100% {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
