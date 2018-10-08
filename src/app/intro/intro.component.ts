@@ -1,6 +1,8 @@
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
+import {LoadOnceService} from '../loadOnce.service'
+
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
@@ -19,9 +21,11 @@ export class IntroComponent implements OnInit {
   }
 
 
-  constructor(private eRef: ElementRef, private router: Router) { }
+  constructor(private loadOnceService: LoadOnceService, private eRef: ElementRef, private router: Router) { }
 
   ngOnInit() {
+    // this.loadOnceService.setHomeStatus(false);
+      this.loadOnceService.isAtHome.emit(false);
   }
 
 }

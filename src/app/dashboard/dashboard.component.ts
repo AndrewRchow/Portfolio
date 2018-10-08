@@ -17,9 +17,11 @@ export class DashboardComponent implements OnInit {
     console.log(this.loadOnceService.getLoadCount());
     if(this.loadOnceService.getLoadCount()>0){
       this.firstLoad = false;
-      console.log('changed');
     }
     this.loadOnceService.incLoadCount();
+
+    this.loadOnceService.isAtHome.emit(true);
+
   }
 
   ngAfterViewInit(){

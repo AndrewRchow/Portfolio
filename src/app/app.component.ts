@@ -10,9 +10,18 @@ import { fadeAnimation } from './fade.animation';
 })
 export class AppComponent {
   title = 'app';
+  backgroundImageBlur:string = "noBlur";
 
   getDepth(outlet){
     return outlet.activatedRouteData['depth'];
+  }
+
+  onActivate(e) {
+    if(e.constructor.name == "DashboardComponent"){
+      this.backgroundImageBlur = "noBlur";
+    }else{
+      this.backgroundImageBlur = "applyBlur";
+    }
   }
 }
 

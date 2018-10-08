@@ -11,9 +11,9 @@ const appRoutes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'home', component: DashboardComponent, data: {depth:1}},
     {path: 'intro', component: IntroComponent, data: {depth:2}},
-    {path: 'skills', component: SkillsComponent, data: {depth:3}},
-    {path: 'projects', component: ProjectsComponent, data: {depth:4}},
-    {path: 'contact', component: ContactComponent, data: {depth:5}},
+    {path: 'skills', component: SkillsComponent, data: {depth:2}},
+    {path: 'projects', component: ProjectsComponent, data: {depth:2}},
+    {path: 'contact', component: ContactComponent, data: {depth:2}},
 ];
 
 @NgModule({

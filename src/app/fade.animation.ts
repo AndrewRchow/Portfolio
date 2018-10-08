@@ -2,37 +2,58 @@ import { trigger, animate, transition, style, query } from '@angular/animations'
 
 export const fadeAnimation =
     trigger('fadeAnimation', [
-        transition( '* => *', [
+        transition( '1 => 2', [
             query(':enter', 
                 [
                     style({ opacity: 0 })
                 ], 
-                { optional: true }
-            ),
-            // query('body', 
-            //     [
-            //         style({ filter: 'blur(0px)' }),
-            //         animate('0.25s ease-in-out', style({ filter: 'blur(5px)' }))
-            //     ], 
-            //     { optional: true }
-            // ),
+                { optional: true }),
+        // query('.bgImage', 
+        //     [
+        //         style({ filter: 'blur(0px)' }),
+        //         animate('1s ease-in-out', style({ filter: 'blur(5px)' }))
+        //     ], 
+        //     { optional: true }
+        // ),
             query(':leave', 
                 [
                     style({ opacity: 1 }),
-                    animate('0.25s ease-in-out', style({ opacity: 0 }))
+                    animate('0.4s ease-in-out', style({ opacity: 0 }))
                 ], 
-                { optional: true }
-            ),
+                { optional: true }),
             query(':enter', 
                 [
                     style({ opacity: 0 }),
                     animate('0.25s ease-in-out', style({ opacity: 1 }))
                 ], 
-                { optional: true }
-            )
-
+                { optional: true })
+        ]),
+        transition( '2 => 1', [
+            query(':enter', 
+                [
+                    style({ opacity: 0 })
+                ], 
+                { optional: true }),
+        // query('.bgImage', 
+        //     [
+        //         style({ filter: 'blur(5px)' }),
+        //         animate('1s ease-in-out', style({ filter: 'blur(0px)' }))
+        //     ], 
+        //     { optional: true }
+        // ),
+            query(':leave', 
+                [
+                    style({ opacity: 1 }),
+                    animate('0.25s ease-in-out', style({ opacity: 0 }))
+                ], 
+                { optional: true }),
+            query(':enter', 
+                [
+                    style({ opacity: 0 }),
+                    animate('0.4s ease-in-out', style({ opacity: 1 }))
+                ], 
+                { optional: true })
         ])
-
     ]);
 
 

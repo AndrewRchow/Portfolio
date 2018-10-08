@@ -1,3 +1,97 @@
+.bgImage {
+  background: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)),url("/assets/wallpaper.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+
+
+}
+
+
+
+.applyBlur {
+  animation: applyBlur 1s ease normal forwards;
+
+}
+@keyframes applyBlur {
+  0%{
+    filter:blur(0px);
+    transform: scale(1.0);
+  }
+  100%{
+    filter:blur(5px);
+    transform: scale(1.1);
+  }
+}
+
+.noBlur {
+  animation: noBlur 1s ease normal forwards;
+
+}
+@keyframes noBlur {
+  0%{
+    filter:blur(5px);
+    transform: scale(1.1);
+  }
+  100%{
+    filter:blur(0px);
+    transform: scale(1.0);
+  }
+}
+
+
+.bg {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-animation: colorToImage 2s ease 1.25s 1 normal forwards;
+  animation: colorToImage 2s ease 1.25s 1 normal forwards;
+}
+
+@-webkit-keyframes colorToImage {
+  0%{
+      opacity:1;
+  }
+  100%{
+      opacity:0; 
+  }
+}
+@keyframes colorToImage {
+  0%{
+      opacity:1;
+  }
+  100%{
+      opacity:0; 
+  }
+}
+
+.test{
+  // -webkit-animation: blur 2s ease 0.5s 1 normal forwards;
+  // animation: blur 2s ease 2s 1 normal forwards;
+}
+
+@keyframes blur {
+  0%{
+      filter: blur(0);
+  }
+  100%{
+    filter: blur(5px);
+  }
+}
+  
   :host {
 
     display: flex;

@@ -1,5 +1,5 @@
-
-
+<div class="bg"></div>
+<div class="bgImage" [ngClass]="backgroundImageBlur" ></div>
 <div class="main" [@fadeAnimation]="getDepth(myOutlet)">
-  <router-outlet #myOutlet="outlet"></router-outlet>
+  <router-outlet #myOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
 </div>
