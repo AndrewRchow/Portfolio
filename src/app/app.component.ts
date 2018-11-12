@@ -18,6 +18,7 @@ export class AppComponent {
 
   onActivate(e) {
     if(e.constructor.name == "DashboardComponent"){
+      console.log('none');
       this.backgroundImageBlur = "noBlur";
     }else{
       this.backgroundImageBlur = "applyBlur";

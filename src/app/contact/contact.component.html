@@ -1,19 +1,17 @@
 <div class="panel">
-    <div class="content">
-  
-      <div [routerLink]="['/home']" id="closeButton"> &times;</div>
-  
-      <h1 id="title">CONTACT</h1>
-      <input type="email" placeholder="Your email">
-      <br />
-      <textarea placeholder="Your message"></textarea>
-      <br />
-      <button id="submitButton" [routerLink]="['/home']">SUBMIT</button>
-      <br />
+  <div class="content">
 
-      <div id="socialLinks">
-          <a href="https://github.com/AndrewRchow" target="_blank" class="fa fa-github fa-3x"></a>    
-          <a href="https://www.linkedin.com/in/andrewchow002/" target="_blank" class="fa fa-linkedin fa-3x"></a>
-        </div>
-    </div>
+    <div [routerLink]="['/home']" id="closeButton"> &times;</div>
+
+    <h1 id="title">CONTACT</h1>
+    <form action="https://formspree.io/andrewchow002@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="Your email">
+      <br />
+      <textarea name="message" id="contactInfoMessage" placeholder="Your message"></textarea>
+      <br />
+      <button id="submitButton">SUBMIT</button>
+      <br />
+    </form>
+
   </div>
+</div>

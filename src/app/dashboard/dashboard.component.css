@@ -62,6 +62,19 @@ li:hover {
 
 }
 
+#socialLinks {
+    text-align:center;
+    margin-top:2rem;
+}
+#socialLinks a{
+    margin-right:2rem;
+    color: white;
+}
+#socialLinks a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1000px){
     #header{
         width:80%;
