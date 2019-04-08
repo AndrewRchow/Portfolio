@@ -18,6 +18,11 @@
     margin-bottom:5rem;
 }
 
+#contactInfoMessage{
+    height: 15rem;
+    line-height: 4rem;
+}
+
 input, textarea {
     background: transparent;
     border-radius: 4px;
