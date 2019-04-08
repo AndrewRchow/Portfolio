@@ -42,6 +42,11 @@ img {
 }
 .projectsHeader:hover {
     color:white;
+    text-decoration: none;
+}
+
+.personal {
+    border-bottom: 1px dashed white;
 }
 
 .projectsText {

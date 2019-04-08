@@ -56,17 +56,7 @@ input, textarea {
     background-color:rgba(211,211,211, 0.2);
 }
 
-#socialLinks {
-    text-align:left;
-}
-#socialLinks a{
-    margin-right:2rem;
-    color: white;
-}
-#socialLinks a:hover {
-    color: #23527c;
-    text-decoration: none;
-}
+
 
 
 #closeButton {
